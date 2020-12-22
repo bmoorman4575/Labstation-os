@@ -32,6 +32,9 @@ gdjs.LOADUPCode.GDrtrObjects3= [];
 gdjs.LOADUPCode.GDspritesObjects1= [];
 gdjs.LOADUPCode.GDspritesObjects2= [];
 gdjs.LOADUPCode.GDspritesObjects3= [];
+gdjs.LOADUPCode.GDNewObjectObjects1= [];
+gdjs.LOADUPCode.GDNewObjectObjects2= [];
+gdjs.LOADUPCode.GDNewObjectObjects3= [];
 
 gdjs.LOADUPCode.conditionTrue_0 = {val:false};
 gdjs.LOADUPCode.condition0IsTrue_0 = {val:false};
@@ -141,7 +144,7 @@ gdjs.LOADUPCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsed
 }if ( gdjs.LOADUPCode.condition0IsTrue_0.val ) {
 {
 {gdjs.LOADUPCode.conditionTrue_1 = gdjs.LOADUPCode.condition1IsTrue_0;
-gdjs.LOADUPCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8006132);
+gdjs.LOADUPCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8053932);
 }
 }}
 if (gdjs.LOADUPCode.condition1IsTrue_0.val) {
@@ -209,7 +212,7 @@ gdjs.LOADUPCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsed
 }if ( gdjs.LOADUPCode.condition0IsTrue_0.val ) {
 {
 {gdjs.LOADUPCode.conditionTrue_1 = gdjs.LOADUPCode.condition1IsTrue_0;
-gdjs.LOADUPCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8008964);
+gdjs.LOADUPCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8056828);
 }
 }}
 if (gdjs.LOADUPCode.condition1IsTrue_0.val) {
@@ -232,7 +235,7 @@ gdjs.LOADUPCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsed
 }if ( gdjs.LOADUPCode.condition0IsTrue_0.val ) {
 {
 {gdjs.LOADUPCode.conditionTrue_1 = gdjs.LOADUPCode.condition1IsTrue_0;
-gdjs.LOADUPCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8010980);
+gdjs.LOADUPCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8057756);
 }
 }}
 if (gdjs.LOADUPCode.condition1IsTrue_0.val) {
@@ -259,7 +262,7 @@ gdjs.LOADUPCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsed
 }if ( gdjs.LOADUPCode.condition0IsTrue_0.val ) {
 {
 {gdjs.LOADUPCode.conditionTrue_1 = gdjs.LOADUPCode.condition1IsTrue_0;
-gdjs.LOADUPCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8012772);
+gdjs.LOADUPCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8058812);
 }
 }}
 if (gdjs.LOADUPCode.condition1IsTrue_0.val) {
@@ -286,7 +289,7 @@ gdjs.LOADUPCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsed
 }if ( gdjs.LOADUPCode.condition0IsTrue_0.val ) {
 {
 {gdjs.LOADUPCode.conditionTrue_1 = gdjs.LOADUPCode.condition1IsTrue_0;
-gdjs.LOADUPCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8008380);
+gdjs.LOADUPCode.conditionTrue_1.val = runtimeScene.getOnceTriggers().triggerOnce(8060012);
 }
 }}
 if (gdjs.LOADUPCode.condition1IsTrue_0.val) {
@@ -307,6 +310,7 @@ gdjs.LOADUPCode.condition0IsTrue_0.val = false;
 gdjs.LOADUPCode.condition0IsTrue_0.val = gdjs.evtTools.runtimeScene.timerElapsedTime(runtimeScene, 11.4, "loading");
 }if (gdjs.LOADUPCode.condition0IsTrue_0.val) {
 gdjs.copyArray(runtimeScene.getObjects("BTM"), gdjs.LOADUPCode.GDBTMObjects2);
+gdjs.copyArray(runtimeScene.getObjects("NewObject"), gdjs.LOADUPCode.GDNewObjectObjects2);
 gdjs.copyArray(runtimeScene.getObjects("loading"), gdjs.LOADUPCode.GDloadingObjects2);
 gdjs.copyArray(runtimeScene.getObjects("loadingtest"), gdjs.LOADUPCode.GDloadingtestObjects2);
 {for(var i = 0, len = gdjs.LOADUPCode.GDBTMObjects2.length ;i < len;++i) {
@@ -319,6 +323,9 @@ gdjs.copyArray(runtimeScene.getObjects("loadingtest"), gdjs.LOADUPCode.GDloading
     gdjs.LOADUPCode.GDloadingtestObjects2[i].setOpacity(gdjs.LOADUPCode.GDloadingtestObjects2[i].getOpacity() - (10));
 }
 }{gdjs.evtTools.runtimeScene.unpauseTimer(runtimeScene, "lights");
+}{for(var i = 0, len = gdjs.LOADUPCode.GDNewObjectObjects2.length ;i < len;++i) {
+    gdjs.LOADUPCode.GDNewObjectObjects2[i].setOpacity(gdjs.LOADUPCode.GDNewObjectObjects2[i].getOpacity() - (10));
+}
 }}
 
 }
@@ -632,6 +639,9 @@ gdjs.LOADUPCode.GDrtrObjects3.length = 0;
 gdjs.LOADUPCode.GDspritesObjects1.length = 0;
 gdjs.LOADUPCode.GDspritesObjects2.length = 0;
 gdjs.LOADUPCode.GDspritesObjects3.length = 0;
+gdjs.LOADUPCode.GDNewObjectObjects1.length = 0;
+gdjs.LOADUPCode.GDNewObjectObjects2.length = 0;
+gdjs.LOADUPCode.GDNewObjectObjects3.length = 0;
 
 gdjs.LOADUPCode.eventsList3(runtimeScene);
 return;
